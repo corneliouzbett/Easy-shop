@@ -3,6 +3,13 @@ language: node_js
 node_js:
   - "8"
   - "9"
+env:
+  global:
+    - CI=true
+  matrix:
+    - TEST_DOC=false
+    - TEST_DOC=true
+
 sudo: true
 # dist: trusty
 
